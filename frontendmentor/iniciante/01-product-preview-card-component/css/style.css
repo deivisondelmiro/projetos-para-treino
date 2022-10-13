@@ -174,12 +174,12 @@ footer a:hover {
     }
 
     button#buttonAddToCart {
-        width: 290px;
+        width: 230px;
         margin: 0;
     }
 
     footer {
-        top: 185px;
+        top: 0px;
     }
     
     footer p {
