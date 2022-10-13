@@ -4,4 +4,4 @@ Alguns projetos de sites que disponibilizam templates para treinar front-end
 
 > Frontendmentor
 
-Perfume Gabrielle Essence Eau De Parfum - ([Clique aqui](https://github.com/deivisondelmiro/projetos-para-treino/frontendmentor/iniciante/01-product-preview-card-component/index.html))
+Perfume Gabrielle Essence Eau De Parfum - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/frontendmentor/iniciante/01-product-preview-card-component/index.html))
