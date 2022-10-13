@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-body-color: hsl(30, 38%, 92%);
+    --background-section-color: hsl(0, 0%, 100%);
+    --text-principal-color: hsl(228, 12%, 48%);
+    --button-color: hsl(158, 36%, 37%);
+    --button-color-hover: hsl(157, 39%, 17%);
+    --ancora-color-hover: hsl(212, 21%, 14%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-body-color);
+}
+
+main {
+    width: 570px;
+    height: 420px;
+    display: flex;
+}
+
+aside#image-product-background img {
+    width: 275px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+section#informations {
+    padding: 30px 0px 30px 25px;
+    border-radius: 0 8px 8px 0;
+    background: var(--background-section-color);
+}
+
+section#informations p#firsTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-principal-color);
+    margin-bottom: 12px;
+}
+
+section#informations h1#principalTitle {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    padding: 5px 50px 20px 0;
+}
+
+section#informations p#principalParagraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-principal-color);
+    line-height: 22px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+}
+
+section#informations p#valueParagraph {
+    font-size: 30px;
+    color:hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+section#informations p#valueParagraph span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-principal-color);
+    padding-left: 20px;
+}
+
+.fontFrauces700 { /* Fonte de <h1> e do value que está em <p> */
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+button#buttonAddToCart {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--background-section-color);
+    background: var(--button-color);
+    border: none;
+    border-radius: 8px;
+    margin: 0;
+    cursor: pointer;
+}
+
+button#buttonAddToCart:hover {
+    background: var(--button-color-hover);
+}
+
+button#buttonAddToCart p {
+    padding-left: 10px;
+}
+
+footer {
+    position: relative;
+    top: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: var(--text-principal-color);
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--ancora-color);
+    transition: color .3s;
+}
+
+footer a:hover {
+    color: var(--ancora-color-hover);
+}
+
+@media (max-width: 600px) {
+    body {
+        height: 80vh;
+    }
+
+    main {
+        width: 76vw;
+        height: 68vh;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    aside#image-product-background {
+        width: 90%;
+        height: 40vh;
+    }
+
+    aside#image-product-background img {
+        width: 100%;
+        border-radius: 8px 8px 0px 0;
+    }
+
+    section#informations {
+        width: 90%;
+        height: 100vh;
+        border-radius: 0 0 8px 8px;
+    }
+
+    section#informations p#firsTitle {
+        font-size: 12px;
+
+    }
+
+    section#informations h1#principalTitle {
+        padding: 0px 50px 15px 0;
+    }
+
+    button#buttonAddToCart {
+        width: 290px;
+        margin: 0;
+    }
+
+    footer {
+        top: 185px;
+    }
+    
+    footer p {
+        margin-bottom: 5px;
+
+    }
+}
