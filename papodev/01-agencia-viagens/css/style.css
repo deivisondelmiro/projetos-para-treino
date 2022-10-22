@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: calc(100vh - 150px); /* Aqui está tirando 150px do 100vh, que é a tela toda */
+    background: no-repeat center/cover url('../assets/header-image.jpg');
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+    margin-left: 80px;
+    transition: transform .3s;
+}
+
+header nav p:hover {
+    transform: scale(1.1);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 80px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    color: black;
+    transition: transform .3s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+}
+
+
+header div.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+header div.header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+/* header div.header-content */ button { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 0;
+    background: #1D61DD;
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #226fff;
+}
+
+section.pacotes {
+    background: #e5e5e5;
+    padding: 15px;
+}
+
+section.pacotes .pacotes-title {
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+}
+
+section.pacotes .pacotes-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+section.pacotes .pacotes-cards .card {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    background: white;
+    border-radius: 24px 0;
+    margin: 25px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+section.pacotes .pacotes-cards .card:hover {
+    transform: scale(1.02);
+}
+
+section.pacotes .pacotes-cards .card .card-tag p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+section.pacotes .pacotes-cards .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #F19B39;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+section.pacotes .pacotes-cards .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1D61DD;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+section.pacotes .pacotes-cards .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+section.pacotes .pacotes-cards .card-content {
+    padding: 0 15px;
+}
+
+section.pacotes .pacotes-cards .card-content h1 {
+    font-size: 1rem;
+}
+
+section.pacotes .pacotes-cards .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+}
+
+section.pacotes .pacotes-cards .card-content ul li {
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: gray;
+    margin: 3px 0;
+}
+
+section.pacotes .pacotes-cards .card-content ul li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.servicos {
+    padding: 15px
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards {
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.servicos .card svg:hover {
+    stroke: #1D61DD;
+    transform: scale(1.1);
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.servicos .card .card-content h3 {
+    font-weight: bold;
+}
+
+.servicos .card .card-content p {
+    font-size: .8rem;
+    text-align: justify;
+    color: grey;
+}
+
+.servicos .card button {
+    margin-bottom: 50px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.contato {
+    position: relative;
+    background: #e1e8f7;
+    padding: 60px;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);
+    border-radius: 8px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+}
+
+.contato .contato-card h1 {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card ul li {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: bold;
+    color: grey;
+}
+
+.contato .contato-card ul li svg {
+    width: 16px;
+    margin: 10px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: #e5e5e5;
+}
+
+footer p a {
+    display: inline-block;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+footer p a:hover {
+    transform: scale(1.02);
+    color: rgb(102, 102, 102);
+}
+
+/* RESPONSIVIDADE */
+
+/* PHONE TO TABLET */
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+
+    .contato .contato-card {
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 20px 0;
+    }
+
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px; /* Está tirando 55px que está no navgation, do height do body */
+    }
+
+    header nav ul {
+        width: 100%;
+        height: 55px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        padding: 0;
+        margin: 0;
+
+        font-weight: bold;
+        color: white;
+        background: #1D61DD;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    header nav p {
+        width: 100%;
+    }
+
+    header nav ul li:hover {
+        color:#e1e8f7;
+    }
+
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
+}
