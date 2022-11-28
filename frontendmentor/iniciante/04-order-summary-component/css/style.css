@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --color-primeira: hsl(225, 100%, 94%);
+  --color-segunda: hsl(245, 75%, 52%);
+  --color-segunda-clara: hsla(245, 75%, 52%, 0.726);
+  --color-segunda-sombra: hsla(245, 75%, 52%, 0.274);
+
+  --color-terceira: hsl(225, 100%, 98%);
+  --color-quarta: hsl(224, 23%, 55%);
+  --color-quinta: hsl(223, 47%, 23%);
+  --color-sexta: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+  background: var(--color-primeira);
+}
+
+.container {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px;
+  background: var(--color-sexta);
+  border-radius: 15px;
+}
+
+.img-background {
+  width: 100%;
+  height: 200px;
+  background-image: url('../images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.7rem 3rem 0rem 3rem;
+  gap: 20px;
+}
+
+.content .title-content {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--color-quinta);
+}
+
+.content .paragrafo-content {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-quarta);
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+.content .plans {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  background: var(--color-terceira);
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.plans .img-plan {
+  max-width: 50px;
+}
+
+.plans .plan {
+  width: 100%;
+  display: flex;
+}
+
+.plan .plan-options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-options .plan-value {
+  font-size: 1rem;
+}
+
+.plan-options .plan-value h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--color-quinta);
+}
+
+.plan-options .plan-value p {
+  font-weight: 500;
+  color: var(--color-quarta);
+}
+
+.plan-options .link-change {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--color-segunda);
+  text-decoration: underline;
+  transition: .3s;
+}
+
+.plan-options .link-change:hover {
+  color: var(--color-segunda-clara);
+  text-decoration: none;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.buttons-style {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+.button-payment {
+  background-color: var(--color-segunda);
+  color: var(--color-sexta);
+  box-shadow: 8px 10px 20px var(--color-segunda-sombra);
+  transition: .3s;
+}
+
+.button-payment:hover {
+  background: var(--color-segunda-clara);
+  cursor: pointer;
+}
+
+.button-cancel-order {
+  background: transparent;
+  color: var(--color-quarta);
+  transition: .3s;
+}
+
+.button-cancel-order:hover {
+  color: var(--color-quinta);
+  cursor: pointer;
+}
+
+footer {
+  max-width: 350px;
+  padding: 0 0 .5rem 0;
+}
+
+footer p {
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--color-quarta);
+  text-align: center;
+}
+
+footer a {
+  transition: all .3s;
+}
+
+footer a:hover {
+  color: var(--color-segunda);
+}
+
+@media (max-width: 510px) {
+  .container {
+    max-width: 300px;
+    margin: 20px;
+  }
+
+  .img-background {
+    height: 170px;
+  }
+
+  .content {
+    padding: .7rem 1.5rem 0rem 1.5rem;
+  }
+
+  .content .title-content {
+    font-size: 1.3rem;
+    color: var(--color-quinta);
+  }
+
+  .content .paragrafo-content {
+    font-size: .85rem;
+  }
+
+  .content .plans {
+    padding: 10px 10px;
+    gap: 15px;
+  }
+
+  .plan-options .link-change {
+    font-size: .7rem;
+  }
+
+  .plan-options .plan-value {
+    font-size: .8rem;
+  }
+
+  .plan-options .plan-value h2 {
+    font-size: .8rem;
+  }
+
+  .buttons {
+    gap: 5px;
+  }
+
+  .buttons-style {
+    font-size: .8rem;
+    padding: 13px;
+  }
+
+  .button-cancel-order:hover {
+    color: var(--color-quinta);
+    cursor: pointer;
+  }
+
+  footer {
+    padding: 0 1rem .6rem 1rem;
+  }
+
+  footer p {
+    font-size: .6rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: 250px
+  }
+
+  .img-background {
+    height: 130px;
+  }
+
+  .content {
+    padding: .7rem 1rem 0rem 1rem;
+  }
+
+  .content .paragrafo-content {
+    font-size: .8rem;
+  }
+
+  .plan-options .link-change {
+    font-size: .6rem;
+  }
+}
