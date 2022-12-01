@@ -14,7 +14,6 @@ Alguns projetos de sites que disponibilizam templates para treinar front-end
 
   Stats - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/frontendmentor/iniciante/05-stats-preview-card-component))
 
-
 > Papo de Dev - [🔗](https://www.youtube.com/channel/UCRhKK6VrISnIWPJjYxBPKnA)
 
   Agência de Viagens - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/papodev/01-agencia-viagens/index.html))

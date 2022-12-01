@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -134,4 +135,142 @@ footer p {
 
 .link-hover:hover, main #profile #profile-link:hover {
   color: var(--color-segunda);
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --color-primeira: hsl(215, 51%, 70%);
+  --color-segunda: hsl(178, 100%, 50%);
+  --color-segunda-clara: hsla(178, 100%, 50%, 0.5);
+
+  --color-terceira: hsl(217, 54%, 11%);
+  --color-quarta: hsl(216, 50%, 16%);
+  --color-quinta: hsl(215, 32%, 27%);
+  --color-sexta: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  background: var(--color-terceira);
+}
+
+.container {
+  max-width: 320px;
+  margin: 15px 15px 5px;
+  padding: 20px 20px 10px;
+  border-radius: 15px;
+  background: var(--color-quarta);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+main .img:hover::after {
+  content: url('../images/icon-view.svg');
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: var(--color-segunda-clara);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main .img #img-nft {
+  border-radius: 10px;
+  display: flex;
+}
+
+main h1 {
+  font-size: 1.4rem;
+  color: var(--color-sexta);
+}
+
+main p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-primeira);
+  line-height: 1.56rem;
+}
+
+main .value-day-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .value-day-item {
+  display: flex;
+  align-items: center;
+  color: var(--color-primeira);
+  gap: 7px;
+}
+
+main .value-day-item .value-span {
+  color: var(--color-segunda);
+}
+
+main hr {
+  height: 1px;
+  border: none;
+  background: var(--color-quinta);
+}
+
+main #profile {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  gap: 15px;
+}
+
+main #profile #img-avatar {
+  max-width: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--color-sexta);
+}
+
+main #profile #profile-link {
+  color: var(--color-sexta);
+}
+
+footer {
+  max-width: 320px;
+}
+
+footer p {
+  font-size: .8rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--color-primeira);
+  margin: 5px;
+}
+
+.link-hover, main #profile #profile-link {
+  transition: .3s;
+}
+
+.link-hover:hover, main #profile #profile-link:hover {
+  color: var(--color-segunda);
+>>>>>>> 8d0911f269832c5a00c1a407afed953962e98527
 }
