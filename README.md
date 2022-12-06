@@ -14,6 +14,10 @@ Alguns projetos de sites que disponibilizam templates para treinar front-end
 
   Stats - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/frontendmentor/iniciante/05-stats-preview-card-component))
 
+  3 Column Preview - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/frontendmentor/iniciante/06-3-column-preview-card-component))
+
+  Profile Card - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/frontendmentor/iniciante/07-profile-card-component))
+
 > Papo de Dev - [🔗](https://www.youtube.com/channel/UCRhKK6VrISnIWPJjYxBPKnA)
 
   Agência de Viagens - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/papodev/01-agencia-viagens/index.html))
