@@ -93,12 +93,21 @@ body {
   border-color: var(--desaturated-red);
   border-radius: 50px;
   background: transparent;
+  outline: 1px solid transparent;
 }
 
 .email-input::placeholder {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   color: var(--desaturated-red);
+}
+
+.email-input:invalid {
+  border-color: red;
+}
+
+.email-input:required {
+  border-color: var(--desaturated-red);
 }
 
 .container-button {

@@ -25,10 +25,10 @@
       <main class="content">
         <h1 class="title-main"><span class="title-decoration">We're</span><br>coming<br>soon</h1>
         <p class="paragraph">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form action="">
+        <form action="POST" autocomplete="on">
           <fieldset class="fieldset">
             <label for="email-input" hidden>Email</label>
-            <input type="email" name="email-input" class="email-input" id="email-input" pattern=".+@+\.com" placeholder="Email Address">
+            <input type="email" name="email-input" class="email-input" id="email-input" pattern=".+@email\.com" placeholder="Email Address" required autocomplete="email" minlength="8" maxlength="35">
             <div class="container-button">
               <label for="button-subimit" hidden>Submit</label>
               <input class="button-submit" id="button-submit" type="submit" value="" title="Submit">
