@@ -52,10 +52,6 @@ body {
   align-self: center;
 }
 
-.content {
-  position: relative;
-}
-
 .title-main {
   font-size: 3.5rem;
   font-weight: 600;
@@ -83,10 +79,14 @@ body {
   border-color: transparent;
 }
 
+.input {
+  position: relative;
+}
+
 .email-input {
   width: 90%;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
   color: var(--dark-grayish-red);
   padding: 1rem 1.5625rem;
   border-width: 1px;
@@ -102,12 +102,23 @@ body {
   color: var(--desaturated-red);
 }
 
-.email-input:invalid {
-  border-color: red;
+.span-erro.active {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #f96464c9;
+  position: absolute;
+  bottom: -20px;
+  left: 25px;
 }
 
-.email-input:required {
-  border-color: var(--desaturated-red);
+.input.active::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url('../images/icon-error.svg') no-repeat center;;
+  position: absolute;
+  bottom: 14px;
+  right: 105px;
 }
 
 .container-button {
@@ -179,6 +190,10 @@ body {
   .title-main {
     font-size: 2.5rem;
     letter-spacing: 0.9375rem;
+  }
+
+  .input::after {
+    display: none;
   }
 }
 
