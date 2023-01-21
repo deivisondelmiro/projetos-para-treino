@@ -22,6 +22,8 @@ Alguns projetos de sites que disponibilizam templates para treinar front-end
 
   Base Apparel - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/frontendmentor/iniciante/10-base-apparel-coming-soon-master))
 
+  Intro Form - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/frontendmentor/iniciante/11-intro-component-with-signup-form-master))
+
 > Papo de Dev - [🔗](https://www.youtube.com/channel/UCRhKK6VrISnIWPJjYxBPKnA)
 
   Agência de Viagens - ([Clique aqui](https://deivisondelmiro.github.io/projetos-para-treino/papodev/01-agencia-viagens/index.html))
