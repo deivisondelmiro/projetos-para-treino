@@ -71,16 +71,50 @@ body {
   border: none;
 }
 
+.form .input {
+  position: relative;
+}
+
 .form .input input {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: .8rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   padding: 15px 30px;
   border: 1px solid var(--grayish-blue);
+  outline: 2px solid transparent;
   border-radius: 5px;
   color: var(--dark-blue);
+  position: relative;
+}
+
+.form .erro {
+  display: none;
+}
+
+.form .erro.active {
+  display: block;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  font-size: .6rem;
+  font-weight: 600;
+  font-style: italic;
+  text-align: right;
+  color: var(--red);
+}
+
+.form .erro.active::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url('../images/icon-error.svg') no-repeat;
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  z-index: 1;
 }
 
 .form .button {
@@ -159,9 +193,14 @@ body {
 
 @media (max-width: 850px) {
   .container {
+    height: auto;
     grid-template-columns: 1fr;
     margin: 20px 100px 25px 100px;
     text-align: center;
+  }
+
+  .paragraph {
+    margin-bottom: 30px;
   }
 }
 
@@ -172,10 +211,6 @@ body {
 
   .title {
     font-size: 2rem;
-  }
-
-  .paragraph {
-    margin-bottom: 10px;
   }
 
   .container-promotion {
